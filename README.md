@@ -1,0 +1,2 @@
+# Wallet
+Lightweight Krist Wallet
