@@ -7,7 +7,7 @@ local cBuild = http.get("https://raw.githubusercontent.com/connordelaneyy/Wallet
 
 if build < tonumber(cBuild) then
   local file = fs.open(shell.getRunningProgram(), "w")
-  file.write
+  file.write(http.get("https://raw.githubusercontent.com/connordelaneyy/Wallet/master/src/wallet.lua").readAll())
   file.close()
 end
 
