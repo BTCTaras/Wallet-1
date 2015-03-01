@@ -2,6 +2,14 @@
 -- Wallet
 -- by Connor Delaney
 
+if not http then
+  error("Wallet requires HTTP to talk to the Krist server, please enable HTTP.", 0)
+end
+
+if not term.isColour() then
+  error("Wallet requires a display that supports colour, try using an advanced computer.", 0)
+end
+
 local build = .5
 local cBuild = http.get("https://raw.githubusercontent.com/connordelaneyy/Wallet/master/BUILD").readAll()
 
