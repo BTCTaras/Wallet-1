@@ -31,7 +31,7 @@ if autoUpdate == true then
 end
 
 local login = function()
-  term.setCursorPos(2, 5)
+  term.setCursorPos(2, 3)
   write("Private Key: ")
   local pkey = io.read("*")
 end
