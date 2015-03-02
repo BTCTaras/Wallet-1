@@ -32,7 +32,7 @@ end
 
 local login = function()
   term.setCursorPos(2, 5)
-  print("Private Key: ")
+  write("Private Key: ")
   local pkey = io.read()
 end
 
