@@ -22,8 +22,6 @@ local header = function()
   print("Wallet - Created by CDEL")
 end
 
-header()
-
 if autoUpdate == true then
   if build < tonumber(cBuild) then
     local file = fs.open(shell.getRunningProgram(), "w")
@@ -31,3 +29,12 @@ if autoUpdate == true then
     file.close()
   end
 end
+
+local login = function()
+  term.setCursorPos(2, 5)
+  print("Private Key: ")
+  local pkey = io.read()
+end
+
+header()
+login()
