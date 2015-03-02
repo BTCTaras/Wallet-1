@@ -10,6 +10,7 @@ if not term.isColour() then
   error("Wallet requires a display that supports colour, try using an advanced computer.", 0)
 end
 
+local pkey = nil
 local build = .5
 local autoUpdate = true
 local cBuild = http.get("https://raw.githubusercontent.com/connordelaneyy/Wallet/master/BUILD").readAll()
@@ -33,7 +34,7 @@ end
 local login = function()
   term.setCursorPos(2, 3)
   write("Private Key: ")
-  local pkey = io.read("*")
+  pkey = read("*")
 end
 
 header()
