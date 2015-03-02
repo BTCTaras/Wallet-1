@@ -11,7 +11,7 @@ if not term.isColour() then
 end
 
 local uData = {
-  pkey = nil
+  pkey = nil,
   balance = 0
 }
 
@@ -54,4 +54,4 @@ local menu = function()
 end
 
 login()
-balance()
+menu()
