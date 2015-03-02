@@ -33,7 +33,7 @@ end
 local login = function()
   term.setCursorPos(2, 5)
   write("Private Key: ")
-  local pkey = io.read()
+  local pkey = io.read("*")
 end
 
 header()
