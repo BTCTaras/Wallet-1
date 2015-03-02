@@ -32,10 +32,11 @@ if autoUpdate == true then
 end
 
 local login = function()
+  header()
   term.setCursorPos(2, 4)
+  print("Enter your Private Key to use Krist, If this is your first time using Krist, a wallet will be generated with the Private Key you enter.")
   write("Private Key: ")
   pkey = read("*")
 end
 
-header()
 login()
