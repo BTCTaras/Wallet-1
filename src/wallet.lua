@@ -32,7 +32,7 @@ if autoUpdate == true then
 end
 
 local login = function()
-  term.setCursorPos(2, 3)
+  term.setCursorPos(2, 4)
   write("Private Key: ")
   pkey = read("*")
 end
