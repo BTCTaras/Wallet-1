@@ -46,7 +46,7 @@ local login = function()
 end
 
 local menu = function()
-  uData.balance = http.get(url..?balance..uData.pkey).readAll()
+  uData.balance = http.get(url.."?balance"..uData.pkey).readAll()
   
   header()
   term.setCursorPos(2, 4)
