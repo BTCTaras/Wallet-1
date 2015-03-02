@@ -39,7 +39,7 @@ end
 local login = function()
   header()
   term.setCursorPos(2, 4)
-  print("Enter your Private Key to use Krist. If this is\n your first time using Krist, a wallet will be\n generated with the Private Key you enter.")
+  print("Enter your private key to use Krist. If this is\n your first time using Krist, a wallet will be\n generated with the private key you enter.")
   term.setCursorPos(2, 8)
   write("Private Key: ")
   uData.pkey = read("*")
