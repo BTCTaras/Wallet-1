@@ -267,8 +267,8 @@ local uData = {
 
 local build = .5
 local autoUpdate = true
-local url = "http://65.26.252.225/quest/dia/krist/"
-local cBuild = http.get("https://raw.githubusercontent.com/connordelaneyy/Wallet/master/BUILD").readAll()
+local url = "http://krist.ceriat.net/"
+local cBuild = http.get("https://raw.githubusercontent.com/BTCTaras/cdelwallet/master/BUILD").readAll()
 
 local header = function()
   term.setBackgroundColour(colours.grey)
@@ -281,7 +281,7 @@ end
 if autoUpdate == true then
   if build < tonumber(cBuild) then
     local file = fs.open(shell.getRunningProgram(), "w")
-    file.write(http.get("https://raw.githubusercontent.com/connordelaneyy/Wallet/master/src/wallet.lua").readAll())
+    file.write(http.get("https://raw.githubusercontent.com/BTCTaras/cdelwallet/master/src/wallet.lua").readAll())
     file.close()
   end
 end
@@ -297,7 +297,7 @@ local login = function()
 end
 
 local menu = function()
-  uData.balance = http.get(url.."?balance"..uData.addr).readAll()
+  uData.balance = http.get(url.."?balance="..uData.addr).readAll()
   
   header()
   term.setCursorPos(2, 4)
